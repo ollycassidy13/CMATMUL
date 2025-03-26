@@ -117,17 +117,10 @@ The results, shown below, highlight the importance of optimising this operation.
 
 The optimised implementation was able to maintain a high amount of numerical accuracy with relative error measurements never exceeding $10^{-5}$ when compared with the naïve implementation. Given the use of floating-point numbers here, some error is expected and these results are well within acceptable floating-point tolerances.
 
-<div style="display: flex; justify-content: space-around;">
-  <figure>
-    <img src="img/results_384.png" alt="Image 1" style="max-width:100%;" />
-    <figcaption style="text-align: center;">Throughput for A of dimension (384, 384) and B (384, 320)</figcaption>
-  </figure>
-  <figure>
-    <img src="img/results_768.png" alt="Image 2" style="max-width:100%;" />
-    <figcaption style="text-align: center;">Throughput for A of dimension (768, 768) and B (768, 640)</figcaption>
-  </figure>
-</div>
-
+<p float="left">
+  <img src="img/results_384.png" width="48%" />
+  <img src="img/results_768.png" width="48%" /> 
+</p>
 
 > Note: The results shown were the peak recorded results for those matrix dimensions on a 3.6 GHz Intel i7 Processor. Performance may vary depending on specific hardware, matrix dimensions and block sizes. The block sizes used (3×32) were chosen to optimise for the specific hardware used in testing.
 
